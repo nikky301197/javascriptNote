@@ -1,0 +1,31 @@
+<script>
+  var name = "nikita";
+  var age = 23;
+  var id = 1;
+  document.write(
+    ` id is  : ${id} and  name is  : ${name}  and age is  : ${age}`
+  );
+
+  var customer = {
+    id: 1,
+    name: "nikta",
+    amount: 30000,
+    withdraw: function (deducate) {
+      this.amount = this.amount - deducate;
+      document.write("<br>"+deducate + " rs deducated from your account");
+    },
+    deposite: function (credit) {
+      this.amount = this.amount + credit;
+      document.write("<br>"+credit + "Rs credited in your account ");
+    },
+    balanceEnquiry: function () {
+      document.write("<br> your current balance is : " + this.amount);
+    },
+  };
+  document.write("<br>");
+  customer.balanceEnquiry();
+  customer.withdraw(2000);
+  customer.balanceEnquiry();
+  customer.deposite(4000);
+  customer.balanceEnquiry();
+</script>

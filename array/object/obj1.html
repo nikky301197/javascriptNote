@@ -1,0 +1,15 @@
+<script>
+
+    var customer = {id : 1 , name :"nikita" , age:32};
+
+    // spread operator to create copy of json object 
+    var customercopy = {... customer};
+     delete customer.name;
+    for (var key in customer)
+    {
+        document.write(customer[key]+" ");
+    }
+  
+    // document.write("<br>"+customer.id + customer.name + customer.age);
+    document.write("<br>"+customercopy.id + customercopy.name + customercopy.age);
+</script>

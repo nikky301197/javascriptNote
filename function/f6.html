@@ -1,0 +1,19 @@
+<script>
+
+var a = 10;
+var  b =20; 
+
+function test (a , b ,c )
+{
+    document.write("<br> a:"+a);
+    document.write("<br> b:"+b);
+    c();
+}
+
+test(a , b , function()
+{
+
+    document.write("<br>callback function ")
+});
+
+</script>

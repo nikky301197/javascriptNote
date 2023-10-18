@@ -1,0 +1,21 @@
+<script>
+   var productList = [
+      {id: 1, name: 'A', price: 5000},
+      {id: 2, name: 'B', price: 7000},
+      {id: 3, name: 'C', price: 8000},
+      {id: 4, name: 'D', price: 2000}
+    ];
+     var p =  JSON.stringify(productList);
+     localStorage.setItem("productdata",p);
+    var data =  localStorage.getItem("productdata");
+    data =  json.parse(data);
+    
+    document.write("hello");
+    // for(var product of data)
+    // {
+    //     document.write(" "+product.id);
+    //     document.write(" "+product.name);
+    //     document.write(" "+product.price);
+    //     document.write("<br>")
+    // }
+</script>

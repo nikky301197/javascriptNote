@@ -1,0 +1,28 @@
+<script>
+    const x = function()
+    {
+        document.write("function as a variable ");
+    }
+    x();
+
+    var a = 10 ; 
+    var b = 30 ;
+     function f2 ( c ,d)
+     {
+        document.write("<br>inside function : ");
+        document.write("<br> a: "+a);
+        document.write("<br> b: "+b);
+        document.write("<br> c: "+c);
+        document.write("<br> d: "+d);
+    }
+    f2(100,200);
+    
+    document.write("<br>outside function : ");
+      document.write("<br> a: "+a);
+        document.write("<br> b: "+b);
+        // document.write("<br> c: "+c);
+        // document.write("<br> d: "+d);
+        document.write("<br> c and d is not accessible outside function because its local variable ")
+    //  a and b = accessible but c and d is not accessible outside function 
+    //  because its local varaible 
+</script>

@@ -1,0 +1,35 @@
+<script>
+
+// json object 
+    var product = {
+        "name":"tv",
+        "brand":"lg",
+        "price":"2000"
+    };
+
+ document.write("<br> product name : "+product.name);
+ document.write("<br> product brand : "+product.brand);
+ document.write("<br> product price : "+product.price);
+
+//  json array 
+var productlist = [
+   {
+    "name":"tv",
+    "brand":"lg",
+    "price":"2000"    
+   },
+   {
+    "name":"lcd",
+    "brand":"samsung",
+    "price":"5000"    
+   }
+]
+
+
+for (var product of productlist)
+{
+    document.write("<br> product name : "+product.name );
+    document.write("<br> product brand : "+product.brand);
+    document.write("<br> product price : "+ product.price);
+}
+</script>    
